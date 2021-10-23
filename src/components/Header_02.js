@@ -11,13 +11,13 @@ const Header_02 = () => {
           <Logo />
         </Link>
         <div className="options">
-          <Link href="./shop_02" className="option">
+          <Link to="/shop_02" className="option">
             Shop
           </Link>
-          <Link href="/contact_02" className="option">
+          <Link to="/contact_02" className="option">
             Contact
           </Link>
-          <Link href="/signin_02" className="option">
+          <Link to="/signin_02" className="option">
             Sign In
           </Link>
           </div>

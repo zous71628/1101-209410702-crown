@@ -1,4 +1,4 @@
-import {Switch,Route} from "react-router-dom";
+import {Switch,Route} from "react-router";
 import Homepage_02 from './pages/Homepage_02';
 import ShopTwoPage_02  from "./pages/ShopTwoPage_02";
 import ContactPage_02 from "./pages/ContactPage_02";
@@ -11,10 +11,18 @@ function App_02() {
     <div>
       <Header_02/>
         <Switch>
-          <Route exact path="/" component={Homepage_02}/>
-          <Route exact path="/shop_02" component={ShopTwoPage_02}/>
-          <Route exact path="/contact_02" component={ContactPage_02}/>
-          <Route exact path="/signin_02" component={SigninPage_02}/>
+          <Route path="/" exact>
+            <Homepage_02/>
+          </Route>
+          <Route path="/shop_02" exact>
+            <ShopTwoPage_02/>
+          </Route>
+          <Route path="/contact_02" exact>
+            <ContactPage_02/>
+          </Route>
+          <Route path="/signin_02" exact>
+            <SigninPage_02/>
+          </Route>
         </Switch>
     </div>
   );
